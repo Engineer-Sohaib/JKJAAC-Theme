@@ -1,0 +1,526 @@
+/**
+ * JKJAAC Tabbed Meta Box - Universal Styles
+ * Unified CSS for ALL tabs (Hero, Mission, Team, Pull Quote, CTA, About)
+ */
+
+/* CSS Variables */
+:root {
+    --jkjaac-primary: #d4af37;
+    --jkjaac-primary-rgb: 212, 175, 55;
+    --jkjaac-primary-light: #e8c84a;
+    --jkjaac-primary-dark: #b8961f;
+    --jkjaac-bg-dark: #0d0d14;
+    --jkjaac-bg-darker: #0a0a0f;
+    --jkjaac-bg-input: #161616;
+    --jkjaac-bg-container: #1e1e1e;
+}
+
+/* ============================================
+   BASE CONTAINER - UNIFIED
+   ============================================ */
+.jkjaac-meta-box {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--jkjaac-bg-container, #1e1e1e);
+    color: #fff;
+    max-width: 100%;
+    padding: 20px !important;
+}
+
+.jkjaac-meta-body {
+    padding: 24px;
+}
+
+/* ============================================
+   TOGGLE ROW - UNIFIED
+   ============================================ */
+.jkjaac-toggle-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+    padding: 16px;
+    background: rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.05);
+    border-left: 3px solid var(--jkjaac-primary, #d4af37);
+    border-radius: 0 6px 6px 0;
+}
+
+.jkjaac-toggle-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--jkjaac-primary, #d4af37);
+    margin: 0;
+}
+
+.jkjaac-toggle-row label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f8f8f8;
+}
+
+.jkjaac-toggle-row small {
+    display: block;
+    color: #fcf9f9;
+    font-size: 11px;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+/* ============================================
+   SECTIONS - UNIFIED
+   ============================================ */
+.jkjaac-section {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.jkjaac-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.jkjaac-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.jkjaac-section-header h3 {
+    color: var(--jkjaac-primary, #d4af37);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.jkjaac-section-header span {
+    color: #fff5f5;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ============================================
+   FORM FIELDS - UNIFIED
+   ============================================ */
+.jkjaac-field {
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.jkjaac-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.jkjaac-section input,.jkjaac-section select,
+.jkjaac-location-fields input, .jkjaac-location-fields select,
+.jkjaac-demands-table input, .jkjaac-demands-table select,
+.jkjaac-stats-table input, .jkjaac-stats-table select,
+.jkjaac-buttons-table input, .jkjaac-buttons-table select,
+.jkjaac-field input[type="text"],
+.jkjaac-field textarea,
+.jkjaac-field select {
+    width: 100%;
+    background: var(--jkjaac-bg-input, #161616);
+    border: 1px solid rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.22);
+    border-radius: 6px;
+    color: #fff !important;
+    font-size: 14px;
+    padding: 12px 14px;
+    transition: all 0.2s ease;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+
+.jkjaac-section input:focus,
+.jkjaac-location-fields input:focus,
+.jkjaac-demands-table input:focus,
+.jkjaac-stats-table input:focus,
+.jkjaac-field input[type="text"]:focus,
+.jkjaac-field textarea:focus,
+.jkjaac-field select:focus {
+    border-color: var(--jkjaac-primary, #d4af37);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.15);
+    background: #15151c;
+}
+
+
+.jkjaac-section input::placeholder,
+.jkjaac-location-fields input::placeholder,
+.jkjaac-demands-table input::placeholder,
+.jkjaac-stats-table input::placeholder,
+.jkjaac-field input[type="text"]::placeholder,
+.jkjaac-field textarea::placeholder {
+    color: #b9adb1 !important;
+    font-size: 12px;
+    opacity: 1;
+}
+
+.jkjaac-field textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.jkjaac-field small {
+    display: block;
+    color: #f1f1f1;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+/* ============================================
+   GRID LAYOUT - UNIFIED
+   ============================================ */
+.jkjaac-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   HINT TEXT - UNIFIED
+   ============================================ */
+.jkjaac-hint {
+    color: #ebe7e7;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 4px;
+    margin-bottom: 12px;
+}
+
+/* ============================================
+   CHECKBOX GROUP - UNIFIED
+   ============================================ */
+.jkjaac-checkbox-group {
+    display: flex;
+    gap: 24px;
+    padding: 16px 0;
+    margin-top: 8px;
+}
+
+.jkjaac-checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.jkjaac-checkbox-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--jkjaac-primary, #d4af37);
+    margin: 0;
+}
+
+.jkjaac-checkbox-item label {
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ============================================
+   PULSE GLOW CHECKBOX - UNIFIED
+   ============================================ */
+.pulse-glow-style .jkjaac-checkbox-item input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.pulse-glow-style .jkjaac-checkbox-item {
+    position: relative;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pulse-glow-style .jkjaac-checkbox-item label {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #f8f8f8;
+    transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    font-size: 0.95rem;
+}
+
+.pulse-glow-style .jkjaac-checkbox-item label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    border: 1.5px solid #cbd5e1;
+    transition: all 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    box-sizing: border-box;
+}
+
+.pulse-glow-style .jkjaac-checkbox-item label::after {
+    content: '✓';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.5);
+    font-size: 13px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.12s ease, transform 0.12s cubic-bezier(0.34, 1.2, 0.64, 1);
+    pointer-events: none;
+}
+
+.pulse-glow-style .jkjaac-checkbox-item input[type="checkbox"]:checked + label::before {
+    background: var(--jkjaac-primary, #d4af37);
+    border-color: var(--jkjaac-primary, #d4af37);
+    box-shadow: 0 0 0 3px rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.3);
+    animation: pulseGlowCheck 0.3s ease-out;
+}
+
+.pulse-glow-style .jkjaac-checkbox-item input[type="checkbox"]:checked + label::after {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+}
+
+@keyframes pulseGlowCheck {
+    0% { box-shadow: 0 0 0 0 rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.5); }
+    100% { box-shadow: 0 0 0 3px rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.3); }
+}
+
+.pulse-glow-style .jkjaac-checkbox-item:hover label::before {
+    transform: translateY(-50%) scale(1.02);
+    border-color: var(--jkjaac-primary-light, #d4af37);
+    background: #fff0e6;
+}
+
+/* ============================================
+   SPECIALIZED STYLES (Tables, Image Uploads)
+   ============================================ */
+
+/* Statistics Table (Hero specific) */
+.jkjaac-stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+.jkjaac-stats-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding-bottom: 8px;
+}
+
+.jkjaac-stats-table td {
+    padding: 8px 12px 8px 0;
+    vertical-align: top;
+}
+
+.jkjaac-stats-table td:first-child {
+    font-weight: 700;
+    color: var(--jkjaac-primary, #d4af37);
+    width: 160px;
+}
+
+/* Buttons Table (CTA specific) */
+.jkjaac-buttons-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.jkjaac-buttons-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--jkjaac-primary, #d4af37);
+    padding-bottom: 12px;
+}
+
+.jkjaac-buttons-table td {
+    padding: 8px 12px 8px 0;
+    vertical-align: top;
+}
+
+.jkjaac-buttons-table input,
+.jkjaac-buttons-table select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 13px;
+}
+
+/* Demands Table (Mission specific) */
+.jkjaac-demands-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.jkjaac-demands-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--jkjaac-primary, #d4af37);
+    padding-bottom: 12px;
+}
+
+.jkjaac-demands-table td {
+    padding: 8px 12px 8px 0;
+    vertical-align: top;
+}
+
+.jkjaac-demands-table input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 13px;
+}
+
+/* Image Preview (Mission, About) */
+.jkjaac-image-preview {
+    margin-bottom: 10px;
+}
+
+.jkjaac-image-preview img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Image Buttons */
+.jkjaac-upload-image-btn,
+.jkjaac-remove-image-btn {
+    margin-top: 5px;
+    margin-right: 8px;
+}
+
+/* Glyphs Grid (Hero specific) */
+.jkjaac-glyphs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 8px;
+}
+
+/* ============================================
+   TAB NAVIGATION
+   ============================================ */
+.jkjaac-tabs {
+    background: var(--jkjaac-bg-dark, #0d0d14);
+    border-bottom: 1px solid rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.2);
+    margin: 0;
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.jkjaac-tab-btn {
+    background: transparent;
+    border: none;
+    padding: 12px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fafaff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+}
+
+.jkjaac-tab-btn:hover {
+    color: var(--jkjaac-primary, #d4af37);
+    background: rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.05);
+}
+
+.jkjaac-tab-btn.active {
+    color: var(--jkjaac-primary, #d4af37);
+    border-bottom-color: var(--jkjaac-primary, #d4af37);
+}
+
+.jkjaac-tab-btn.hidden-tab {
+    display: none;
+}
+
+.jkjaac-tab-content {
+    display: none;
+    padding: 0;
+}
+
+.jkjaac-tab-content.active {
+    display: block;
+}
+
+.jkjaac-tabs-container {
+    background: var(--jkjaac-bg-container, #1e1e1e);
+}
+
+/* Meta Box Overrides */
+#jkjaac_tabbed_meta .postbox-header {
+    border-bottom: 1px solid rgba(var(--jkjaac-primary-rgb, 212, 175, 55), 0.2);
+}
+
+#jkjaac_tabbed_meta .inside {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .jkjaac-row-2 {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .jkjaac-section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+    
+    .jkjaac-glyphs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .jkjaac-buttons-table th,
+    .jkjaac-buttons-table td,
+    .jkjaac-demands-table th,
+    .jkjaac-demands-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .jkjaac-buttons-table td,
+    .jkjaac-demands-table td {
+        padding: 8px 0;
+    }
+}

@@ -1,0 +1,18 @@
+/*
+Theme Name: JKJAAC
+Theme URI: https://jkjaac.co
+Author: JKJAAC Web Team
+Author URI: https://jkjaac.co
+Description: Official WordPress theme for the Jammu Kashmir Joint Awami Action Committee — a grassroots civil society coalition fighting for economic justice, resource rights, and democratic accountability in Azad Jammu & Kashmir.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 8.0
+License: All Rights Reserved
+License URI: https://jkjaac.co
+Text Domain: jkjaac
+Tags: civil-society, activism, movement, dark, political
+*/
+
+/* Theme styles are loaded via functions.php (css/bundle.css).
+   This file satisfies WordPress theme requirements. */
